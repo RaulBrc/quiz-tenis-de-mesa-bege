@@ -1,10 +1,14 @@
+/* Fonte do site */
+body, h1, p, button {
+  font-family: 'Intro Rust', Arial, sans-serif;
+}
+
 /* Fundo geral do quiz */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f0e1; /* bege do seu site */
+  background-color: #f5f0e1; /* bege */
   text-align: center;
   padding: 80px 20px;
-  color: #5a2d8c; /* texto violeta */
+  color: #5a2d8c; /* violeta */
 }
 
 /* Título e perguntas */
@@ -43,7 +47,7 @@ button {
 }
 
 button:hover {
-  background-color: #ffea70; /* amarelo mais claro no hover */
+  background-color: #ffea70; /* amarelo mais claro */
   transform: scale(1.05);
 }
 
