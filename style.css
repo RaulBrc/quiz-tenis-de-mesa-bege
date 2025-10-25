@@ -1,75 +1,43 @@
-/* Importar fontes */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Arabic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Intro+Rust&display=swap');
-
-/* Fundo geral do quiz */
 body {
-  background-color: #f5f0e1; /* bege */
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
   text-align: center;
   padding: 80px 20px;
-  color: #5a2d8c; /* padrão para textos gerais */
 }
 
-/* Título e descrição do quiz */
-h1, body > p:first-of-type {
-  font-family: 'Montserrat Arabic', Arial, sans-serif;
-  color: #c14e0a; /* mesma cor das perguntas */
-  font-size: 28px;
-  margin-bottom: 20px;
+h1 {
+  color: #333;
 }
 
-/* Perguntas */
 p {
-  font-family: 'Montserrat Arabic', Arial, sans-serif;
   font-size: 22px;
   margin-bottom: 30px;
-  color: #c14e0a; /* cor laranja intensa para as perguntas */
 }
 
-/* Perguntas escondidas suavemente */
-.question {
-  transition: opacity 0.5s ease;
-}
-
-.question.hidden {
-  opacity: 0;
-  display: none;
-}
-
-/* Botões (alternativas) */
 button {
   display: block;
   width: 250px;
-  margin: 25px auto;
-  padding: 20px 0;
+  margin: 15px auto;
+  padding: 18px 0;
   font-size: 20px;
   cursor: pointer;
   border: none;
   border-radius: 12px;
-  background-color: #ffd500; /* amarelo */
-  color: #5a2d8c; /* violeta */
-  font-family: 'Intro Rust', Arial, sans-serif;
-  transition: background-color 0.3s, transform 0.2s;
+  background-color: #4CAF50;
+  color: white;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #ffea70; /* amarelo mais claro */
-  transform: scale(1.05);
+  background-color: #45a049;
 }
 
-button:focus {
-  outline: 3px solid #5a2d8c; /* contorno violeta */
-  outline-offset: 3px;
-}
-
-/* Resultado final */
 #result {
   margin-top: 50px;
   font-size: 24px;
   font-weight: bold;
 }
 
-/* Botão do resultado */
 a button {
   margin-top: 30px;
 }
