@@ -1,20 +1,29 @@
+/* Importar fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Arabic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Intro+Rust&display=swap');
+
 /* Fundo geral do quiz */
 body {
-  font-family: Arial, sans-serif;
   background-color: #f5f0e1; /* bege */
   text-align: center;
   padding: 80px 20px;
-  color: #5a2d8c; /* violeta */
+  color: #5a2d8c; /* padrão para textos gerais */
 }
 
-/* Título e perguntas */
-h1 {
-  color: #5a2d8c;
+/* Título e descrição do quiz */
+h1, body > p:first-of-type {
+  font-family: 'Montserrat Arabic', Arial, sans-serif;
+  color: #c14e0a; /* mesma cor das perguntas */
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
+/* Perguntas */
 p {
+  font-family: 'Montserrat Arabic', Arial, sans-serif;
   font-size: 22px;
   margin-bottom: 30px;
+  color: #c14e0a; /* cor laranja intensa para as perguntas */
 }
 
 /* Perguntas escondidas suavemente */
@@ -27,7 +36,7 @@ p {
   display: none;
 }
 
-/* Botões */
+/* Botões (alternativas) */
 button {
   display: block;
   width: 250px;
@@ -39,6 +48,7 @@ button {
   border-radius: 12px;
   background-color: #ffd500; /* amarelo */
   color: #5a2d8c; /* violeta */
+  font-family: 'Intro Rust', Arial, sans-serif;
   transition: background-color 0.3s, transform 0.2s;
 }
 
